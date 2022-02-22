@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,48 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" title="Testing styles">
 
-    
+
 </head>
+
 <body>
-    
+
+    <!-- Accordion component-->
+    <section>
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Accordion component</h2>
+                <p class="lead text-muted">This is the default look of the accordion component</p>
+            </div>
+
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+
+                <!-- Accordion -->
+                <div class="accordion" id="accordion-1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="item-1" >
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#target-name" aria-expanded="false" aria-controls="target-name">
+                                Accordion Item
+                            </button>
+                        </h2>
+                        <div id="target-name" class="accordion-collapse collapse" aria-labelledby="item-1"
+                            data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos enim eum molestias
+                                    consequatur rerum blanditiis reprehenderit repudiandae, assumenda doloribus quae
+                                    dolor? Deserunt minus esse nemo asperiores ullam itaque, molestias temporibus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
